@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Ordering System</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Link to Google Fonts for custom font -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Header section containing logo and background images -->
+    <header>
+        <div class="header-inner">
+            <img src="img/header/logo.png" alt="Pizza Logo" class="logo head" />
+            <img src="img/header/elements-header.png" alt="Background Elements" class="bg-elements head" />
+            <img src="img/header/pizza-header.png" alt="Pizza Photo" class="photo head" />
+        </div>
+    </header>
+
+    <!-- Main content area where menu items will be displayed -->
+    <div id="main-content">
+        <!-- Menu items will be rendered here -->
+    </div>
+
+    <!-- Order list section -->
+    <div id="order-list">
+        <!-- Order list will be rendered here -->
+    </div>
+
+    <!-- Modal window for payment details -->
+    <div class="modal" id="modal">
+        <div class="close-modal-btn-container">
+            <button class="modal-close-btn" id="modal-close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="modal-inner" id="modal-inner">
+            <h2 class="modal-title">Enter Card Details</h2>
+
+            <form id="consent-form">
+                <input type="text" name="fullName" placeholder="Enter your name" pattern="[A-Za-z\s]+"
+                    title="Please use letters and spaces only" required />
+
+                <input type="text" name="cardNumber" placeholder="Enter card number" inputmode="numeric"
+                    pattern="[0-9]+" maxlength="16" title="Please use numbers only" required />
+
+                <input type="password" name="cvv" placeholder="Enter CVV" inputmode="numeric" pattern="[0-9]+"
+                    maxlength="4" title="Please use numbers only" required />
+
+                <div class="modal-choice-btns" id="modal-choice-btns">
+                    <button type="submit" class="modal-btn">Pay</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

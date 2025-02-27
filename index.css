@@ -1,0 +1,310 @@
+/* GENERAL STYLES */
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 600px;
+    font-family: "Barlow", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    /* border: 1px solid; */
+}
+
+/* HEADER STYLES */
+.header-inner {
+    position: relative;
+    height: 410px;
+}
+
+.head {
+    position: absolute;
+}
+
+.logo {
+    top: 25px;
+    width: 130px;
+    left: 40px;
+}
+
+.photo {
+    width: 530px;
+    height: auto;
+    right: 40px;
+}
+
+.bg-elements {
+    width: 600px;
+    height: auto;
+}
+
+/* ITEM CONTENT STYLES */
+.item-content {
+    justify-content: space-between;
+    align-items: center;
+    width: 510px;
+    margin: 40px auto;
+    display: flex;
+    gap: 25px;
+}
+
+.item-img {
+    width: 150px;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5));
+}
+
+.dish {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+h2 {
+    color: #cc1e03;
+}
+
+p {
+    white-space: pre-line;
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+}
+
+.price {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* RATING STYLES */
+.star-rating {
+    direction: rtl;
+    display: inline-flex;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    margin-top: 20px;
+    color: #ddd;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.star-rating input[type="radio"]:checked~label,
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: #ffc107;
+}
+
+/* NUMERIC BUTTONS STYLES */
+.num-btn {
+    display: flex;
+}
+
+.btn,
+.num-input {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    margin: 0 -2px;
+    padding: 0;
+    border: 3px solid #000000;
+    text-align: center;
+}
+
+.num-input::-webkit-inner-spin-button,
+.num-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn {
+    color: white;
+}
+
+.minus {
+    border-radius: 50% 0 0 50%;
+    background: #000000;
+}
+
+.plus {
+    border-radius: 0 50% 50% 0;
+    background: #000000;
+}
+
+/* HORIZONTAL RULE STYLES */
+hr {
+    width: 510px;
+    border: 0.1px solid #000000;
+}
+
+/* BACKGROUND MENU STYLES */
+.menu-bg {
+    position: relative;
+    height: 100px;
+}
+
+.bg-elements-menu {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    top: -30px;
+    right: 0;
+}
+
+/* ORDER SECTION STYLES */
+.order-content {
+    width: 510px;
+    margin: 40px auto;
+}
+
+.order-dish {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 410px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.order-delete {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.order-hr {
+    margin-left: 0;
+    width: 410px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 410px;
+}
+
+.complete-order {
+    margin-top: 20px;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    background: #cc1e03;
+    color: #ddd;
+    font-weight: bold;
+    margin: 40px auto;
+}
+
+/* BACKGROUND ORDER STYLES */
+.order-bg {
+    position: relative;
+    height: 25px;
+}
+
+.bg-elements-order {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 20px;
+    right: 0;
+}
+
+/* MODAL STYLES */
+.modal {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 550px;
+    width: 450px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: #000000;
+    color: #ddd;
+}
+
+.modal-inner {
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    align-content: center;
+}
+
+/* Modal Button Styles */
+.close-modal-btn-container {
+    text-align: right;
+    margin: 15px;
+}
+
+.modal-close-btn {
+    font-size: 22px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #ddd;
+}
+
+#consent-form {
+    margin-top: 50px;
+}
+
+.modal-title {
+    color: #ddd;
+}
+
+input {
+    margin: 10px auto;
+    border: 1px solid #cc1e03;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.modal-btn {
+    margin-top: 50px;
+    width: 100%;
+    background: #cc1e03;
+    color: #ddd;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.loading {
+    margin-top: 100px;
+    width: 150px;
+}
+
+.modal-pic {
+    margin: 20px auto;
+    height: auto;
+    width: 300px;
+}
+
+/* BUTTONS: Base styles */
+.complete-order,
+.modal-btn {
+    background-color: #cc1e03; /* Original red color */
+    color: #ddd;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease; /* Transition effect */
+}
+
+/* BUTTONS: Hover state */
+.complete-order:hover,
+.modal-btn:hover {
+    background-color: #333; /* Dark gray color */
+}
